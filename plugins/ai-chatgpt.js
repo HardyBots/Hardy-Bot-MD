@@ -130,6 +130,6 @@ const handler = async (m, {conn, text, command}) => {
   }
 };
 
-handler.command = ['gxdalle', 'bard', 'bardimg'];
+handler.command = ['ai', 'ai2', 'gpt', 'gpt2', 'gpt3', 'gpt4'];
 handler.tags = ['ai'];
 export default handler;
