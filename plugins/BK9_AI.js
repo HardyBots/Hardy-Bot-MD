@@ -24,23 +24,6 @@ const handler = async (m, {conn, text, command}) => {
     } catch (error) {
       throw `${tradutor.bk9dalleerr}`;
     }
-  } else if (command === 'gpt4') {
-    if (!text) throw `${tradutor.bk9text}`;
-
-    try {
-      conn.sendPresenceUpdate('composing', m.chat);
-      const BK9api = `https://api.bk9.site/ai/gpt4?q=${encodeURIComponent(text)}`;
-      const BK99 = await fetch(BK9api);
-      const BK8 = await BK99.json();
-      if (BK8.status && BK8.BK9) {
-        const respuestaAPI = BK8.BK9;
-        conn.reply(m.chat, respuestaAPI, m);
-      } else {
-        throw `${tradutor.bk9err}`;
-      }
-    } catch (error) {
-      throw `${tradutor.bk9err}`;
-    }
     } else if (command === 'bard') {
     if (!text) throw `${tradutor.bk9text}`;
 
