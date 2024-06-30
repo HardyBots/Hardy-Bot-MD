@@ -69,7 +69,7 @@ export async function handler(chatUpdate) {
         if (!isNumber(user.joincount)) user.joincount = 2;
         if (!isNumber(user.limit)) user.limit = 20;
         if (!isNumber(user.money)) user.money = 15;
-        if (!('language' in user)) user.language = 'es';
+        if (!('language' in user)) user.language = 'ar';
         if (!('registered' in user)) user.registered = false;
         if (!user.registered) {
           if (!('name' in user)) user.name = m.name;
@@ -949,7 +949,7 @@ export async function handler(chatUpdate) {
         if (!('id' in gameglx.perfil.nivel)) gameglx.perfil.nivel.id = 0;
         if (!('proximoNivel' in gameglx.perfil.nivel)) gameglx.perfil.nivel.proximoNivel = 1;
         if (!('xp' in gameglx.perfil)) gameglx.perfil.xp = 112;
-        if (!('idioma' in gameglx.perfil)) gameglx.perfil.idioma = 'pt-br'; // Definindo padrão 
+        if (!('idioma' in gameglx.perfil)) gameglx.perfil.idioma = 'ar'; // Definindo padrão 
         if (!('minerando' in gameglx.perfil)) gameglx.perfil.minerando = false;
         if (!('id' in gameglx.perfil)) gameglx.perfil.id = null;
         if (!('username' in gameglx.perfil)) gameglx.perfil.username = null;
@@ -1042,7 +1042,7 @@ export async function handler(chatUpdate) {
             nome: null,
             username: null,
             id: null, // Id do Jogador
-            idioma: 'pt-br',
+            idioma: 'ar',
             casa: {
               id: null, // id do grupo ou seja do planeta casa
               planeta: null,
@@ -1124,7 +1124,7 @@ export async function handler(chatUpdate) {
         global.db.data.chats[m.chat] = {};
       }
       if (chat) {
-        if (!('language' in chat)) chat.language = 'es';
+        if (!('language' in chat)) chat.language = 'ar';
         if (!('isBanned' in chat)) chat.isBanned = false;
         if (!('welcome' in chat)) chat.welcome = true;
         if (!('detect' in chat)) chat.detect = true;
@@ -1209,7 +1209,7 @@ export async function handler(chatUpdate) {
       console.error(e);
     }
 
-    const idioma = global.db.data.users[m.sender]?.language || 'es';
+    const idioma = global.db.data.users[m.sender]?.language || 'ar';
     const _translate = JSON.parse(fs.readFileSync(`./language/${idioma}.json`))
     const tradutor = _translate.handler.handler
 
