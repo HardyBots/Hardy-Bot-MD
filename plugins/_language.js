@@ -18,29 +18,17 @@ const handler = async (m, { args, usedPrefix, command, isAdmin }) => {
         let sigla // Args user
 
         //---- Transformar "cadena" en letras minúsculas
-        if (args[0] != undefined) {
+        if (args[0] != ar) {
             sigla = args[0].toLowerCase()
         }
 
         if (command === 'lang') {
             // ----- Opciones de lenguaje
-            if (sigla === 'pt-br' || sigla === 'pt' || sigla === 'br') {
-                global.db.data.users[m.sender].language = 'pt-br'
-                m.reply(`*[ ✅ ] Hardy - Bot*\n\n*—◉* *_Idioma definido em Português 🇧🇷_*`)
-
-            } else if (sigla === 'es') {
-                global.db.data.users[m.sender].language = 'es'
-                m.reply(`*[ ✅ ] Hardy - Bot*\n\n*—◉* *_Idioma definido a Español 🇪🇸_*`)
-
-            } else if (sigla === 'en') {
+            if if (sigla === 'en') {
                 global.db.data.users[m.sender].language = 'en'
                 m.reply(`*[ ✅ ] Hardy - Bot*\n\n*—◉* *_Idioma definido a Inglês 🇬🇧_*`)
 
-            } else if (sigla === 'ru') {
-                global.db.data.users[m.sender].language = 'ru'
-                m.reply(`*[ ✅ ] Hardy - Bot*\n\n*—◉* *_Язык установлен на русский 🇷🇺_*`)
-
-            }else if (sigla === 'fr') {
+            } else if (sigla === 'fr') {
                 global.db.data.users[m.sender].language = 'fr'
                 m.reply(`*[ ✅ ] Hardy - Bot*\n\n*—◉* *_Langue définie en Français 🇫🇷_*`)
 
@@ -54,7 +42,7 @@ const handler = async (m, { args, usedPrefix, command, isAdmin }) => {
 ${tradutor.texto1[2]}
 ${tradutor.texto1[3]} *( ${data.db.data.users[m.sender].language} )*
 ${tradutor.texto1[0]}
-*${usedPrefix}lang* en
+*${usedPrefix}lang* ar
 
 ${tradutor.texto1[1]}
 
@@ -104,7 +92,7 @@ ${tradutor.texto1[1]}
             } else  {
                 m.reply(`
 ${tradutor.texto2[0]}
-*${usedPrefix}langgroup* en
+*${usedPrefix}langgroup* ar
 
 ${tradutor.texto2[1]}
 
