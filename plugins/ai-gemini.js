@@ -4,8 +4,12 @@ import uploader from '../lib/uploadImage.js';
 
 const handler = async (m, {conn, text, command}) => {
   const datas = global;
+  const idioma = datas.db.data.users[m.sender].language;
+  const _translate = JSON.parse(fs.readFileSync(`./language/ar.json`));
+  const tradutor = _translate.BK9.BK9;
 
-    if (!text) throw `يـرجـى إدخـال نـص، مـثـال\n.gemini مرحبا كيف حالك`;
+    if (command === 'bard') {
+    if (!text) throw `${tradutor.bk9text}`;
 
     try {
       conn.sendPresenceUpdate('composing', m.chat);
@@ -16,10 +20,21 @@ const handler = async (m, {conn, text, command}) => {
         const respuestaAPI = BK8.BK9;
         conn.reply(m.chat, respuestaAPI, m);
       } else {
-        throw `خطأ. الرجاء معاودة المحاولة في وقت لاحق.`;
+        throw `${tradutor.bk9err}`;
       }
     } catch (error) {
-      throw `خطأ. الرجاء معاودة المحاولة في وقت لاحق.`;
+      throw `${tradutor.bk9err}`;
+    }
+  } else if (command === 'bardimg') {
+    let BK7 = m.quoted ? m.quoted : m;
+    let BK8 = (BK7.msg || BK7).mimetype || BK7.mediaType || '';
+    if (/image/g.test(BK8) && !/webp/g.test(BK8)) {
+      let BK0 = await BK7.download();
+      let BK9img = await uploader(BK0);
+      let BK9api = await (await fetch(`https://api.bk9.site/ai/geminiimg?url=${BK9img}&q=${text}`)).json();
+      conn.sendMessage(m.chat, { text: BK9api.BK9 }, { quoted: m });
+    } else {
+      throw `${tradutor.bk9imgtext}`;
     }
   }
 };
