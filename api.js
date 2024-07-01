@@ -57,7 +57,7 @@ global.APIKeys = {
   'https://api.lolhuman.xyz': 'GataDios',
   'https://api.neoxr.my.id': `${keysneoxr}`,
   'https://api.zahwazein.xyz': `${keysxxx}`,
-  'https://api-fgmods.xyz': 'fg-dylux',
+  'https://api-fgmods.xyz': 'BBuX8Gfs',
   'https://api.botcahx.biz.id': 'Admin',
   'https://api.ibeng.tech/docs': 'tamvan',
   'https://api.itsrose.site': 'Rs-Zeltoria',
