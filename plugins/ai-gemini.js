@@ -4,11 +4,8 @@ import uploader from '../lib/uploadImage.js';
 
 const handler = async (m, {conn, text, command}) => {
   const datas = global;
-  const idioma = datas.db.data.users[m.sender].language;
-  const _translate = JSON.parse(fs.readFileSync(`./language/ar.json`));
-  const tradutor = _translate.BK9.BK9;
 
-    if (!text) throw `يـرجـى إدخـال نـص، مـثـال (.bard مرحبا كيف حالك)`;
+    if (!text) throw `يـرجـى إدخـال نـص، مـثـال\n.gemini مرحبا كيف حالك`;
 
     try {
       conn.sendPresenceUpdate('composing', m.chat);
@@ -19,10 +16,10 @@ const handler = async (m, {conn, text, command}) => {
         const respuestaAPI = BK8.BK9;
         conn.reply(m.chat, respuestaAPI, m);
       } else {
-        throw `${tradutor.bk9err}`;
+        throw `خطأ. الرجاء معاودة المحاولة في وقت لاحق.`;
       }
     } catch (error) {
-      throw `${tradutor.bk9err}`;
+      throw `خطأ. الرجاء معاودة المحاولة في وقت لاحق.`;
     }
   }
 };
