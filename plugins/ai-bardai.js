@@ -24,7 +24,7 @@ const handler = async (m, {conn, text, command}) => {
     } catch (error) {
       throw `${tradutor.bk9dalleerr}`;
     }
-    } else if (command === 'bard') {
+    /*} else if (command === 'bard') {
     if (!text) throw `${tradutor.bk9text}`;
 
     try {
@@ -51,7 +51,7 @@ const handler = async (m, {conn, text, command}) => {
       conn.sendMessage(m.chat, { text: BK9api.BK9 }, { quoted: m });
     } else {
       throw `${tradutor.bk9imgtext}`;
-    }
+    }*/
   }
 };
 
