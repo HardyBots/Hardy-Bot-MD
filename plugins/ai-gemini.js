@@ -27,6 +27,6 @@ const handler = async (m, {conn, text, command}) => {
   }
 };
 
-handler.command = ['gemini', 'bard'];
+handler.command = ['gemini'];
 handler.tags = ['ai'];
 export default handler;
