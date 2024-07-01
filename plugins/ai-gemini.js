@@ -8,7 +8,6 @@ const handler = async (m, {conn, text, command}) => {
   const _translate = JSON.parse(fs.readFileSync(`./language/ar.json`));
   const tradutor = _translate.BK9.BK9;
 
-    if (command === 'gemini') {
     if (!text) throw `${tradutor.bk9text}`;
 
     try {
@@ -34,6 +33,6 @@ const handler = async (m, {conn, text, command}) => {
   }
 };
 
-handler.command = ['gemini'];
+handler.command = ['bard'];
 handler.tags = ['ai'];
 export default handler;
