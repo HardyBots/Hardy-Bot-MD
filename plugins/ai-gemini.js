@@ -8,7 +8,7 @@ const handler = async (m, {conn, text, command}) => {
   const _translate = JSON.parse(fs.readFileSync(`./language/ar.json`));
   const tradutor = _translate.BK9.BK9;
 
-    if (!text) throw `${tradutor.bk9text}`;
+    if (!text) throw `يـرجـى إدخـال نـص، مـثـال\n${usedPrefix}${command} مرحبا كيف حالك`;
 
     try {
       conn.sendPresenceUpdate('composing', m.chat);
@@ -27,6 +27,6 @@ const handler = async (m, {conn, text, command}) => {
   }
 };
 
-handler.command = ['gemini', 'geminiimg'];
+handler.command = ['gemini', 'bard'];
 handler.tags = ['ai'];
 export default handler;
