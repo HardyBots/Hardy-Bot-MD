@@ -39,6 +39,6 @@ const handler = async (m, {conn, text, command}) => {
   }
 };
 
-handler.command = ['gxdalle', 'bard', 'bardimg'];
+handler.command = ['gemini', 'geminiimg'];
 handler.tags = ['ai'];
 export default handler;
