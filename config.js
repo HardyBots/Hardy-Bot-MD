@@ -21,9 +21,14 @@ global.packname = 'Sticker';
 global.author = 'Hardy - Bot';
 global.wm = 'Hardy - Bot';
 global.titulowm = 'Hardy - Bot';
-global.titulowm2 = `Hardy - Bot`
+global.titulowm2 = `Hardy - Bot`;
 global.igfg = 'Hardy - Bot';
 global.wait = '*[ ⏳ ] Charging...*';
+global.rwait = '⌛';
+global.dmoji = '🤭';
+global.done = '✅';
+global.error = '❌';
+global.xmoji = '🔥';
 
 global.imagen1 = fs.readFileSync('./src/logo.jpg');
 global.imagen2 = fs.readFileSync('./src/logo.jpg');
