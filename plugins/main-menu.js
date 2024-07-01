@@ -51,7 +51,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
       await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, {type: 'audioMessage', ptt: true});
     }
   } catch {
-    conn.reply(m.chat, tradutor.texto1[3], m);
+    
   }
 };
 handler.command = /^(menu|help|hardy)$/i;
