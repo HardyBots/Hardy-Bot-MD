@@ -8,7 +8,7 @@ const handler = async (m, {conn, text, command}) => {
   const _translate = JSON.parse(fs.readFileSync(`./language/ar.json`));
   const tradutor = _translate.BK9.BK9;
 
-    if (!text) throw `يـرجـى إدخـال نـص، مـثـال\n${usedPrefix}bard مرحبا كيف حالك`;
+    if (!text) throw `يـرجـى إدخـال نـص، مـثـال\n.bard مرحبا كيف حالك`;
 
     try {
       conn.sendPresenceUpdate('composing', m.chat);
