@@ -6,7 +6,6 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
   const _translate = JSON.parse(fs.readFileSync(`./language/${idioma}.json`))
   const tradutor = _translate.plugins.menu_labiblia
 
-if (!db.data.chats[m.chat].modohorny && m.isGroup) throw `${tradutor.texto1[0]} ${usedPrefix}enable modohorny*`; 
   try {
     const pp = imagen1;
     const vn = './media/menu.mp3';
