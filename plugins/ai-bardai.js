@@ -8,7 +8,7 @@ const handler = async (m, {conn, text, command}) => {
   const _translate = JSON.parse(fs.readFileSync(`./language/ar.json`));
   const tradutor = _translate.BK9.BK9;
 
-  if (command === 'gxdalle') {
+  if (command === 'dalle') {
     if (!text) throw `${tradutor.bk9dalletext}`;
 
     await conn.sendMessage(m.chat, {text: tradutor.bk9dallewait}, {quoted: m});
@@ -24,7 +24,7 @@ const handler = async (m, {conn, text, command}) => {
     } catch (error) {
       throw `${tradutor.bk9dalleerr}`;
     }
-    /*} else if (command === 'bard') {
+    } else if (command === 'bard') {
     if (!text) throw `${tradutor.bk9text}`;
 
     try {
@@ -51,10 +51,10 @@ const handler = async (m, {conn, text, command}) => {
       conn.sendMessage(m.chat, { text: BK9api.BK9 }, { quoted: m });
     } else {
       throw `${tradutor.bk9imgtext}`;
-    }*/
+    }
   }
 };
 
-handler.command = ['gxdalle'];
+handler.command = ['dalle'];
 handler.tags = ['ai'];
 export default handler;
