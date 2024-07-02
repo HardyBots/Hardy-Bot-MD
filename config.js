@@ -30,16 +30,9 @@ global.done = '✅';
 global.error = '❌';
 global.xmoji = '🔥';
 
-global.imagen1 = fs.readFileSync('./src/logo.jpg');
-global.imagen2 = fs.readFileSync('./src/logo.jpg');
-global.imagen3 = fs.readFileSync('./src/logo.jpg');
-global.imagen4 = fs.readFileSync('./src/logo.jpg');
-global.imagen5 = fs.readFileSync('./src/logo.jpg');
-global.imagen6 = fs.readFileSync('./src/logo.jpg');
-global.imagen7 = fs.readFileSync('./src/logo.jpg');
-global.imagen8 = fs.readFileSync('./src/logo.jpg')
-global.imagen9 = fs.readFileSync('./src/logo.jpg')
-global.imagen10 = fs.readFileSync('./src/logo.jpg')
+global.imagen1 = fs.readFileSync('./Menu.png');
+global.imagen2 = fs.readFileSync('./Menu.png');
+global.imagen3 = fs.readFileSync('./Menu.png');
 
 global.mods = [];
 
