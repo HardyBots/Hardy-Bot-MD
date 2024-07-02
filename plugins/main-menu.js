@@ -37,37 +37,53 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ┣ ඬ⃟ 📥 _*${usedPrefix}ytadoc*_
 ┣ ඬ⃟ 📥 _*${usedPrefix}ytv*_
 ┣ ඬ⃟ 📥 _*${usedPrefix}ytvdoc*_
+┣ ඬ⃟ 📥 _*${usedPrefix}fb*_
+┣ ඬ⃟ 📥 _*${usedPrefix}ig*_
+┣ ඬ⃟ 📥 _*${usedPrefix}tiktok*_
+┣ ඬ⃟ 📥 _*${usedPrefix}modapk*_
+┣ ඬ⃟ 📥 _*${usedPrefix}mediafire*_
+┣ ඬ⃟ 📥 _*${usedPrefix}gdrive*_
+┣ ඬ⃟ 📥 _*${usedPrefix}gitclone*_
 ┗━━━━━━━━━━━━━━━━┛
 
 
 ┏━━━━━━━━━━━━━━━━┓
 ┃     𝕊𝔼𝔸ℝℂℍ 𝕄𝔼ℕ𝕌
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
-┣ ඬ⃟ 🔍 _*${usedPrefix}audio* (youtube audio)_
-┣ ඬ⃟ 🔍 _*${usedPrefix}video* (youtube video)_
+┣ ඬ⃟ 🔍 _*${usedPrefix}ytsearch*_
+┣ ඬ⃟ 🔍 _*${usedPrefix}play*_
+┣ ඬ⃟ 🔍 _*${usedPrefix}play2*_
+┣ ඬ⃟ 🔍 _*${usedPrefix}playdoc*_
+┣ ඬ⃟ 🔍 _*${usedPrefix}playdoc2*_
+┣ ඬ⃟ 🔍 _*${usedPrefix}githubsearch*_
+┣ ඬ⃟ 🔍 _*${usedPrefix}wikipedia*_
+┣ ඬ⃟ 🔍 _*${usedPrefix}gimage*_
 ┗━━━━━━━━━━━━━━━━┛
 
 
 ┏━━━━━━━━━━━━━━━━┓
 ┃     𝔸𝕀 𝕄𝔼ℕ𝕌
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
-┣ ඬ⃟ 🤖 _*${usedPrefix}bard*_
-┣ ඬ⃟ 🤖 _*${usedPrefix}bardimg*_
-┣ ඬ⃟ 🤖 _*${usedPrefix}ia*_
-┣ ඬ⃟ 🤖 _*${usedPrefix}ia2*_
-┣ ඬ⃟ 🤖 _*${usedPrefix}gpt*_
-┣ ඬ⃟ 🤖 _*${usedPrefix}gpt2*_
-┣ ඬ⃟ 🤖 _*${usedPrefix}gpt3*_
 ┣ ඬ⃟ 🤖 _*${usedPrefix}gpt4*_
+┣ ඬ⃟ 🤖 _*${usedPrefix}bardimg*_
+┣ ඬ⃟ 🤖 _*${usedPrefix}dalle*_
 ┗━━━━━━━━━━━━━━━━┛
 
 
 ┏━━━━━━━━━━━━━━━━┓
 ┃     𝔾ℝ𝕆𝕌ℙ 𝕄𝔼ℕ𝕌
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
-┣ ඬ⃟ 👥 _*${usedPrefix}cmd*_
-┣ ඬ⃟ 👥 _*${usedPrefix}cmd*_
-┣ ඬ⃟ 👥 _*${usedPrefix}cmd*_
+┣ ඬ⃟ 👥 _*${usedPrefix}join*_
+┣ ඬ⃟ 👥 _*${usedPrefix}leave*_
+┣ ඬ⃟ 👥 _*${usedPrefix}add*_
+┣ ඬ⃟ 👥 _*${usedPrefix}invite*_
+┣ ඬ⃟ 👥 _*${usedPrefix}kick*_
+┣ ඬ⃟ 👥 _*${usedPrefix}goup* (open/close)_
+┣ ඬ⃟ 👥 _*${usedPrefix}setpp*_
+┣ ඬ⃟ 👥 _*${usedPrefix}setdesc*_
+┣ ඬ⃟ 👥 _*${usedPrefix}setwelcome*_
+┣ ඬ⃟ 👥 _*${usedPrefix}getprofile*_
+┣ ඬ⃟ 👥 _*${usedPrefix}getbio*_
 ┗━━━━━━━━━━━━━━━━┛
 
 
@@ -75,7 +91,11 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ┃     𝕋𝕆𝕆𝕃𝕊 𝕄𝔼ℕ𝕌
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ ⚙️ _*${usedPrefix}upload*_
-┣ ඬ⃟ ⚙️ _*${usedPrefix}cmd*_
+┣ ඬ⃟ ⚙️ _*${usedPrefix}enable*_
+┣ ඬ⃟ ⚙️ _*${usedPrefix}disable*_
+┣ ඬ⃟ ⚙️ _*${usedPrefix}fetch/get*_
+┣ ඬ⃟ ⚙️ _*${usedPrefix}logos*_
+┣ ඬ⃟ ⚙️ _*${usedPrefix}trad/tr*(ar/fr/en/es...)_
 ┗━━━━━━━━━━━━━━━━┛
 
 
@@ -87,6 +107,8 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ┣ ඬ⃟ 👑 _*${usedPrefix}update*_
 ┣ ඬ⃟ 👑 _*${usedPrefix}fetch*_
 ┣ ඬ⃟ 👑 _*${usedPrefix}join*_
+┣ ඬ⃟ 👑 _*${usedPrefix}ban*_
+┣ ඬ⃟ 👑 _*${usedPrefix}unban*_
 ┗━━━━━━━━━━━━━━━━┛
 `.trim();
     if (m.isGroup) {
